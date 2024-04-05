@@ -9,11 +9,7 @@ To replicate the functionality of the web server on your own machine, follow the
 ### Prerequisites
 
 - Install Node.js along with its corresponding modules.
-- Set up a database with a single table containing the following attributes: 
-  - id (numeric, auto-incremental)
-  - IP (string)
-  - date (datetime format)
-  - page (string)
+- Set up the database by opening the "database.sql" file with MySqlWorkbench and execute the script to create it and the corresponding table.
 - Save the database access credentials in the corresponding structure within the main file `app.js`.
 
 ### Installation
