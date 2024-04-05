@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rain Forest Project</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        
+        <div class="top-links">
+            <a href="/">Home</a>
+            <a href="/info">Info</a>
+            <a href="/contatti">Contatti</a>
+        </div>
+
+        <header>
+            <h1>Statistiche</h1>
+        </header>
+
+        <section class="statistiche-section">
+            <h2 style="color: yellow">Visite Home</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>IP</th>
+                        <th>Data e Ora</th>
+                        <th>Numero visita</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Variabile contatore locale "let" -->
+                    <% let counterHomepage = 1; %>
+                    <% homepageData.forEach(function(row) { %>
+                        <tr>
+                            <td><%= row.IP %></td>
+                            <!--Formattazione Data-->
+                            <td><%= new Date(row.Data).toLocaleString('it-IT', { day: 'numeric', month: 'long', year: 'numeric', hour: 'numeric', minute: 'numeric', second: 'numeric' }) %></td>
+                            <td><%= counterHomepage++ %></td>
+                        </tr>
+                    <% }); %>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="statistiche-section">
+            <h2 style="color: yellow">Visite Info</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>IP</th>
+                        <th>Data e Ora</th>
+                        <th>Numero visita</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Variabile contatore locale "let" -->
+                    <% let counterInfo = 1; %>
+                    <% infoData.forEach(function(row) { %>
+                        <tr>
+                            <td><%= row.IP %></td>
+                            <!--Formattazione Data-->
+                            <td><%= new Date(row.Data).toLocaleString('it-IT', { day: 'numeric', month: 'long', year: 'numeric', hour: 'numeric', minute: 'numeric', second: 'numeric' }) %></td>
+                            <td><%= counterInfo++ %></td>
+                        </tr>
+                    <% }); %>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="statistiche-section" style="margin-bottom: 100px;">
+            <h2 style="color: yellow">Visite Contatti</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>IP</th>
+                        <th>Data e Ora</th>
+                        <th>Numero visita</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Variabile contatore locale "let" -->
+                    <% let counterContatti = 1; %>
+                    <% contattiData.forEach(function(row) { %>
+                        <tr>
+                            <td><%= row.IP %></td>
+                            <!--Formattazione Data-->
+                            <td><%= new Date(row.Data).toLocaleString('it-IT', { day: 'numeric', month: 'long', year: 'numeric', hour: 'numeric', minute: 'numeric', second: 'numeric' }) %></td>
+                            <td><%= counterContatti++ %></td>
+                        </tr>
+                    <% }); %>
+                </tbody>
+            </table>
+        </section>
+    </div>
+</body>
+</html>

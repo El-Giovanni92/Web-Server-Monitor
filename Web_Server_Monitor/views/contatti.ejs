@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contatti e Form Donazione</title>
+  <link rel="stylesheet" href="/css/styles.css">
+  <script>
+    function submitForm() {
+      alert("Grazie! Il tuo messaggio è stato inviato con successo.\nPresto verrai ricontattato dalla Green Harmony Conservation!");
+      document.getElementById("form").reset();
+    }
+  </script>
+</head>
+<body>
+  <div class="container">
+
+    <div class="top-links">
+        <a href="/">Home</a>
+        <a href="/info">Info</a>
+        <a href="/statistiche">Statistiche</a>
+    </div>
+
+    <header>
+      <h1>Contatti e Donazioni</h1>
+    </header>
+    
+    <section id="donate">
+      <div class="light-green-bg">
+        <h3>Contribuisci al Progetto</h3>
+        <p>Il tuo sostegno è fondamentale per la preservazione della foresta pluviale amazzonica. Puoi contribuire in diversi modi:</p>
+        <h4>Donazione Individuale:</h4>
+        <p>Fai la differenza con una donazione individuale. Ogni contributo, anche piccolo, è prezioso per il nostro progetto. Puoi effettuare la tua donazione tramite bonifico bancario o carta di credito.</p>
+        <h4>Contributo da Parte di Società:</h4>
+        <p>Le aziende possono sostenere il progetto diventando partner ufficiali di Green Harmony Conservation. Offriamo programmi di partnership su misura per rispondere alle esigenze delle aziende interessate a sostenere la causa ambientale.</p>
+        <p>Per ulteriori dettagli e informazioni sui metodi di donazione, contattaci direttamente utilizzando il modulo sottostante.</p>
+      </div>
+    </section>
+
+    <section id="contact-form">
+        <div class="light-green-bg">
+          <h3>Compila il form per essere ricontattato</h3>
+          <form id="form" onsubmit="submitForm(); return false;">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required>
+              </div>
+              <div class="form-group">
+                <label for="surname">Cognome:</label>
+                <input type="text" id="surname" name="surname" required>
+              </div>
+              <div class="form-group">
+                <label for="company">Società <em>(opzionale)</em>:</label>
+                <input type="text" id="company" name="company">
+              </div>
+            </div>
+      
+            <div class="form-row">
+              <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+              </div>
+              <div class="form-group">
+                <label for="cellphone">Cellulare:</label>
+                <input type="tel" id="cellphone" name="cellphone" required>
+              </div>
+              <div class="form-group">
+                <label for="phone">Telefono <em>(opzionale)</em>:</label>
+                <input type="tel" id="phone" name="phone">
+              </div>
+            </div>
+      
+            <div class="form-group-message">
+                <label for="message">Messaggio <em>(opzionale)</em>:</label>
+                <textarea id="message" name="message" rows="4"></textarea>
+            </div>
+                  
+            <div class="form-row-sumbit">
+              <button type="submit">Invia</button>
+            </div>
+          </form>
+        </div>
+    </section>                 
+
+    <section id="contacts-list">
+      <div class="light-green-bg">
+        <h3>Lista Contatti</h3>
+        <ul>
+          <li>Email: <em>info@greenharmonyconservation.org</em></li>
+          <li>Telefono: <em>+55 5247199696</em></li>
+          <li>Fax: <em>+55 1939367700</em></li>
+        </ul>
+      </div>
+    </section>
+
+    <footer>
+      <p>Torna alla <a href="/">homepage</a>.</p>
+    </footer>
+  </div>
+</body>
+</html>

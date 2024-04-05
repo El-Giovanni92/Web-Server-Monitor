@@ -1,0 +1,28 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #0b331f; /* Verde scuro */
+    color: #ffffff; /* Testo bianco */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Altezza del 100% della viewport */
+  }
+  
+  .container {
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+  }
+  
+  p {
+    font-size: 1.2em;
+  }
+  
+  
+  
+  

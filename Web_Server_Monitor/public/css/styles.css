@@ -1,0 +1,172 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #0b331f; /* Verde scuro */
+  color: #ffffff; /* Testo bianco */
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+header {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.top-links {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  gap: 15px;
+  font-size: 1.2em;
+}
+
+.top-links a {
+  font-size: 0.92em;
+  color: #ffffff;
+  transition: color 0.3s ease; /* Animazione del colore al passaggio del mouse */
+}
+
+.top-links a:hover {
+  color: #ffff00; /* Cambia il colore al passaggio del mouse */
+}
+
+h1 {
+  font-size: 3em;
+  margin: 0 0 10px; /* Aggiunto un margine in basso */
+}
+
+h2 {
+  font-size: 1.3em;
+  margin: 0 0 15px; /* Aggiunto un margine in basso */
+  white-space: pre-line;
+}
+
+h3 {
+  color:#ffff00;
+  font-size: 2em;
+  margin: 0 0 10px;
+}
+
+h4 {
+  color:#ffff00;
+  font-size: 1em;
+}
+
+p {
+  font-size: 1.2em;
+  white-space: pre-line; /* Mantiene gli "a capo" del testo sul file html */
+}
+
+a {
+  color: #ffff00;
+}
+
+li {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+footer {
+  margin-bottom: 100px;
+}
+
+section {
+  margin-bottom: 30px; 
+}
+
+.light-green-bg {
+  background-color: #146a38; /* Verde più chiaro */
+  padding: 20px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 70px;
+  margin-left:70px;
+  margin-top: 30px;
+  margin-bottom: 25px;
+}
+
+.form-row input {
+  width: 190px;
+}
+
+.form-group {
+  flex: 1;
+}
+
+.form-group-message {
+  position: relative;
+  margin-top: 35px;
+}
+
+label[for="message"] {
+  position: absolute;
+  top: 0;
+  left: 205px;
+}
+
+textarea#message {
+  width: 400px;
+  height: 150px;
+  box-sizing: border-box;
+  margin-left: 375px;
+  resize: none;
+}
+
+.form-row-sumbit {
+  align-items: center;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.form-group label[for="email"] {
+  margin-left: 3px;
+}
+
+.form-group label[for="cellphone"] {
+  margin-left: 7px;
+}
+
+.form-group label[for="phone"] {
+  margin-left: -6px;
+}
+
+table {
+  width: 80%;
+  border-collapse: collapse;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+/* Stile delle celle della tabella */
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+/* Stile dell'intestazione della tabella */
+th {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.statistiche-section {
+  background-color: #146a38; /* Verde più chiaro */
+  padding: 20px;
+  width: 70%;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
